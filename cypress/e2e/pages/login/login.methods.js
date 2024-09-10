@@ -5,11 +5,11 @@ export class LoginMethods{
     /*Se crean métodos para insertar el username y password, llamando los elementos que fueron 
     creados en la clase LoginElements*/
     static insertUsername(username){
-        LoginElements.textboxes.username.type(username)
+        LoginElements.textboxes.username.invoke('val', username)
     }
 
     static insertPassword(password){
-        LoginElements.textboxes.password.type(password)
+        LoginElements.textboxes.password.invoke('val', password)
     }
 
     static clickOnLoginButton(){
